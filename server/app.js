@@ -24,6 +24,7 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
+
 // Import Router
 const authRouter = require("./routes/auth");
 const categoryRouter = require("./routes/categories");
@@ -66,6 +67,7 @@ app.use("/api", authRouter);
 app.use("/api/user", usersRouter);
 app.use("/api/category", categoryRouter);
 app.use("/api/product", productRouter);
+
 app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);

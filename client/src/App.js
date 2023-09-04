@@ -9,6 +9,7 @@ function App() {
       <LayoutContext.Provider value={{ data, dispatch }}>
         <Routes />
       </LayoutContext.Provider>
+      
     </Fragment>
   );
 }
