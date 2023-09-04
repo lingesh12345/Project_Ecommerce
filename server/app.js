@@ -41,6 +41,8 @@ const CreateAllFolder = require("./config/uploadFolderCreateScript");
 CreateAllFolder();
 
 // Database Connection
+
+
 mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -76,4 +78,5 @@ app.use("/api/customize", customizeRouter);
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("Server is running on ", PORT);
+
 });
