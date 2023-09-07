@@ -32,7 +32,6 @@ class Product {
       let Products = await productModel
         .find({})
         .populate("pCategory", "_id cName")
-        .populate("pImages") 
         .sort({ _id: -1 });
       if (Products) {
         return res.json({ Products });
